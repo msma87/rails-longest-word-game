@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ .square-box {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 0;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: center;
+  line-height: 50px; /* Aligns text vertically */
+  margin: 5px; /* Adds margin between squares */
+}
+

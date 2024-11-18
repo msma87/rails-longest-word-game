@@ -1,0 +1,20 @@
+<h1 mx-2>New Game</h1>
+
+<p>
+  <% @letters.each do |letter| %>
+    <div class="square-box"><%= letter %></div>
+  <% end %>
+</p>
+
+<div>
+  <label for="inputField" class="form-label">What is the longest word you can find?</label>
+</div>
+<div class="container" style="max-width: 600px;">
+  <form action="TODO" method="TODO" data-turbo="false">
+    <div class="input-group">
+      <input type="text" class="form-control" id="inputField" placeholder="Enter text" style="width: 200px;">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </div>
+  </form>
+</div>
